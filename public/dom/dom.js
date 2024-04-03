@@ -99,7 +99,8 @@ function generarLista() {
         const spanImagen = document.createElement('span');
         const img = document.createElement('img');
         img.classList.add('Imagen-Cards');
-        img.setAttribute('src', serie.imagen);
+        var linkCorrecto = serie.imagen + "/";
+        img.setAttribute('src', linkCorrecto);
         img.setAttribute('alt', serie.nombre);
         spanImagen.appendChild(img);
 
