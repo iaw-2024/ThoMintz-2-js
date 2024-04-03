@@ -1,6 +1,6 @@
 function generarLista() {
     
-    const url = "http://localhost:3000/api/series";
+    const url = "/api/series";
     var lista = document.getElementById('lista-series');
     fetch(url)
     .then(response => response.json())
