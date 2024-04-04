@@ -50,5 +50,3 @@ const series = [
         imagen: "images/las_chicas_superpoderosas.jfif"
     }
 ]
-
-export default series;
