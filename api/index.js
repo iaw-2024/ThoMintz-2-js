@@ -1,5 +1,6 @@
-import series from "./series.js";
+//import series from "./series.js";
 import express from 'express';
+const series = [];
 import path, {resolve} from "path";
 import { fileURLToPath } from 'url';
 
