@@ -1,6 +1,6 @@
 import series from "./series.json";
 const express = require("express");
-import path from "path";
+import path, {resolve} from "path";
 import { fileURLToPath } from 'url';
 
 
@@ -15,7 +15,7 @@ app.set("view engine", "ejs");
 app.set('views', path.join(__dirname, '../views'));
 
 // Configuramos Express para servir archivos estáticos desde la carpeta "public"
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.resolve(__dirname, '..' ,'public')));
 
 // Configuramos una ruta para servir el archivo HTML desde la carpeta "cliente_servidor"
 app.get("/api/series", (req, res) => res.send(series));
