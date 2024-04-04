@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get("/api/series", (req, res) => res.send(series));
 
 // Configuramos una ruta de ejemplo
-app.get("/express", (req, res) => res.render("listado", {series: series}));
+app.get("/express", (req, res) => res.render("lista", {series: series}));
 
 // Iniciamos el servidor en el puerto especificado
 app.listen(port, () => {
