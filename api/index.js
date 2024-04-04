@@ -1,5 +1,5 @@
-import series from "./series.js";
-import express from "express";
+import series from "./series.json";
+const express = require("express");
 import path from "path";
 import { fileURLToPath } from 'url';
 
@@ -28,4 +28,4 @@ app.listen(port, () => {
     console.log(`Server ready on port http://localhost:${port}`);
 });
 
-export default app;
+module.exports = app;
