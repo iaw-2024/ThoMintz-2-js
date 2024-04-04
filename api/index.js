@@ -20,7 +20,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Configuramos una ruta para servir el archivo HTML desde la carpeta "cliente_servidor"
 app.get("/api/series", (req, res) => res.send(series));
 
-// Configuramos una ruta de ejemplo
 app.get("/express", (req, res) => res.render("lista", {series: series}));
 
 // Iniciamos el servidor en el puerto especificado
