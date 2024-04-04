@@ -1,4 +1,4 @@
-import series from "./series.json";
+import series from "./series.js";
 import express from "express";
 import path from "path";
 import { fileURLToPath } from 'url';
