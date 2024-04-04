@@ -1,6 +1,5 @@
-//import series from "./series.js";
-const series = [];
-const express = require("express");
+import series from "./series.js";
+import express from 'express';
 import path, {resolve} from "path";
 import { fileURLToPath } from 'url';
 
@@ -28,4 +27,4 @@ app.listen(port, () => {
     console.log(`Server ready on port http://localhost:${port}`);
 });
 
-module.exports = app;
+export default app;
