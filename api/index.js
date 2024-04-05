@@ -1,4 +1,4 @@
-import series from "./series.js";
+import datos from "./datos.js";
 import express from 'express';
 import path, {resolve} from "path";
 import { fileURLToPath } from 'url';
@@ -18,9 +18,9 @@ app.set('views', path.join(__dirname, '../views'));
 app.use(express.static(path.resolve(__dirname, '..' ,'public')));
 
 // Configuramos una ruta para servir el archivo HTML desde la carpeta "cliente_servidor"
-app.get("/api/series", (req, res) => res.send(series));
+app.get("/api/series", (req, res) => res.send(datos));
 
-app.get("/express", (req, res) => res.render("lista", {series: series}));
+app.get("/express", (req, res) => res.render("lista", {series: datos}));
 
 // Iniciamos el servidor en el puerto especificado
 app.listen(port, () => {

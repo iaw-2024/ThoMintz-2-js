@@ -1,4 +1,4 @@
-const series = [
+const datos = [
     {
         nombre: "Un Show Mas",
         sinopsis: "\"Un Show Más\" sigue las hilarantes aventuras de Mordecai, un arrendajo azul, y Rigby, un mapache, quienes trabajan como encargados de mantenimiento en un parque. A pesar de su trabajo, se encuentran constantemente envueltos en situaciones surrealistas y cómicas que desafían la realidad, mientras enfrentan desafíos en el trabajo y en sus relaciones personales. La serie mezcla humor absurdo con momentos de reflexión sobre la amistad y la vida adulta.",
@@ -51,4 +51,4 @@ const series = [
     }
 ]
 
-export default series;
+export default datos;
