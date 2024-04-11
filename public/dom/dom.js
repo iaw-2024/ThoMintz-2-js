@@ -103,7 +103,6 @@ function generarLista() {
         img.setAttribute('alt', serie.nombre);
         spanImagen.appendChild(img);
 
-        // Construir la estructura del DOM
         divContentImage.appendChild(spanSinopsis);
         divContentImage.appendChild(br);
         divContentImage.appendChild(spanImagen);
@@ -121,10 +120,10 @@ function generarLista() {
 
         li.appendChild(divAccordion);
 
-        // Agregar el elemento al DOM
+
         lista.appendChild(li);
     });
 }
 
-//Hecho para que se ejecute automaticamente este el DOM
+
 document.addEventListener('DOMContentLoaded', generarLista);
